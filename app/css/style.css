@@ -1,0 +1,190 @@
+@font-face {
+  font-family: astahov;
+  src: url(../fonts/astahov.ttf);
+}
+@font-face {
+  font-family: segoe;
+  src: url(../fonts/segoe.ttf);
+}
+@font-face {
+  font-family: ice;
+  src: url(../fonts/ice.ttf);
+}
+@font-face {
+  font-family: morning-glory;
+  src: url(../fonts/morning-glory.otf);
+}
+@font-face {
+  font-family: byrnison;
+  src: url(../fonts/byrnison.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: ice, Helvetica, sans-serif;
+  text-align: center;
+  color: rgba(128, 0, 0, 0.6);
+  margin-bottom: 50px;
+}
+html {
+  height: 100%;
+}
+body {
+  background: url(../img/pero.jpg);
+  font-family: segoe, Helvetica, sans-serif;
+  height: 100%;
+}
+#main-wrap {
+  background: beige;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+}
+.form-style {
+  width: 100%;
+  text-align: center;
+}
+.form-style label {
+  font-size: 18px;
+  color: brown;
+  margin-bottom: 20px;
+  font-family: byrnison, Arial, sans-serif;
+  font-weight: normal;
+}
+.form-style input,
+.form-style label {
+  width: 80%;
+}
+.form-style input {
+  height: 35px;
+}
+.form-style input,
+.form-style textarea {
+  background: whitesmoke;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 2px solid #FFE4B5;
+  padding: 10px;
+  outline: 0;
+  font-family: segoe, Arial, sans-serif;
+  font-weight: normal;
+  color: black;
+}
+.form-style textarea {
+  width: 90%;
+}
+.form-style input[type=submit] {
+  margin: 50px 0 0 0;
+  padding: 0;
+  width: 30%;
+  color: brown;
+  background: #FFFFE0;
+  font-size: 18px;
+  font-family: byrnison, Arial, sans-serif;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.form-style input[type=submit]:hover {
+  background: brown;
+  color: whitesmoke;
+}
+.form-style span {
+  float: right;
+  position: absolute;
+  color: orange;
+  font-weight: bold;
+  right: 1%;
+}
+.form-style .ng-invalid.ng-dirty {
+  border: 2px solid red;
+  -webkit-box-shadow: 0 0 10px #ff0000;
+  box-shadow: 0 0 10px #ff0000;
+}
+.form-style .ng-valid.ng-dirty {
+  border: 2px solid green;
+  -webkit-box-shadow: 0 0 10px #228b22;
+  box-shadow: 0 0 10px #228b22;
+}
+header {
+  min-height: 10%;
+}
+.menu {
+  text-align: center;
+  background: #F5DEB3;
+}
+.menu .link {
+  padding: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.menu .link:hover {
+  background: #800000;
+}
+.menu .dropdown-toggle:after {
+  content: "";
+  border-top: 5px dashed;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: 20px;
+  right: 35%;
+}
+.menu .dropdown-menu {
+  left: 10%;
+  text-align: center;
+}
+.menu .dropdown-menu li a {
+  font-size: 13px;
+}
+.menu a {
+  padding: 10px 0;
+  display: block;
+  font-family: astahov, Helvetica, Arial, sans-serif;
+  color: #800000;
+  font-size: 18px;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #FFDEAD;
+}
+.menu a:focus {
+  text-decoration: none;
+}
+.active {
+  border-bottom: 1px solid #800000;
+  text-shadow: 0 0 10px #ff0000;
+}
+main {
+  background: beige;
+  height: 85%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.town-name {
+  font-size: 25px;
+  font-family: morning-glory, Helvetica, sans-serif;
+  color: #DC143C;
+}
+.town-img {
+  width: 100%;
+}
+.vin-hor {
+  margin: 30px 0;
+  text-align: center;
+}
+.message-cont {
+  padding-top: 100px;
+}
+footer {
+  font-family: astahov, Helvetica, Arial, sans-serif;
+  text-align: center;
+  background: #F5DEB3;
+  padding-top: 5px;
+  height: 5%;
+}

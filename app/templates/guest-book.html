@@ -1,0 +1,38 @@
+<h2>Guest-book!!!</h2>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div ng-controller="guestMessagesCtrl as guestMessagesCtrl">
+				<form class="form-style" name="guestForm" ng-submit="guestMessagesCtrl.messagesAll(text)">
+					<label>
+						Please your name:<br><input type="text" name="guestName" ng-model="text.name" required>
+					</label>
+					<span ng-show="guestForm.guestName.$error.required && guestForm.guestName.$dirty">Required!</span>
+					<br>
+					<label>
+						Leave your message:<br><textarea cols="100" rows="5" name="guestMessage" ng-model="text.mess" required></textarea>
+					</label>
+					<span ng-show="guestForm.guestMessage.$error.required && guestForm.guestMessage.$dirty">Required!</span>
+					<br>
+					<input type="submit" value="Send message">
+				</form>
+				<div class="message-cont">
+					<div ng-repeat="message in message">
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align: center;">
+								<p>{{message.name}}</p>
+								<p>{{message.date}}</p>
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+								<p ng-bind-html="message.message"></p>
+							</div>
+						</div>
+						<div class="vin-hor">
+							<img src="/app/img/vin-horizont-1.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

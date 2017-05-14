@@ -1,0 +1,23 @@
+<div class="container-fluid">
+	<h2>Towns of real heroes:</h2>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div ng-controller="townsListCtrl as townsListCtrl">
+				<div ng-repeat="towns in townsListCtrl.townsList">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<p class="town-name">{{towns.name}}</p>
+							<img class="town-img" ng-src={{towns.img}}>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<span ng-bind-html="towns.descript"></span>
+						</div>
+					</div>
+					<div class="vin-hor">
+						<img src="/app/img/vin-horizont.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

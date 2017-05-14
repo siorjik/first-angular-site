@@ -1,0 +1,203 @@
+@font-face {
+	font-family: astahov;
+	src: url(../fonts/astahov.ttf);
+}
+@font-face {
+	font-family: segoe;
+	src: url(../fonts/segoe.ttf);
+}
+@font-face {
+	font-family: ice;
+	src: url(../fonts/ice.ttf);
+}
+@font-face {
+	font-family: morning-glory;
+	src: url(../fonts/morning-glory.otf);
+}
+@font-face {
+	font-family: byrnison;
+	src: url(../fonts/byrnison.otf);
+}
+
+@color: #800000;
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3 {
+	padding: 0;
+	margin: 0;
+	font-family: ice, Helvetica, sans-serif;
+	text-align: center;
+	color: fadeout(@color, 40%);
+	margin-bottom: 50px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: url(../img/pero.jpg);
+	font-family: segoe, Helvetica, sans-serif;
+	height: 100%;
+}
+
+#main-wrap {
+	background: beige;
+	width: 95%;
+	margin: 0 auto;
+	height: 100%; 
+}
+
+//form-style
+.form-style {
+	width: 100%;
+	text-align: center;
+	label {
+		font-size: 18px;
+		color: brown;
+		margin-bottom: 20px;
+		font-family: byrnison, Arial, sans-serif;
+    font-weight: normal;
+	}
+	input, label {
+    width: 80%;
+	}
+	input {
+		height: 35px;
+	}
+	input, textarea {
+    background: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid #FFE4B5;
+    padding: 10px;
+    outline: 0;
+    font-family: segoe, Arial, sans-serif;
+    font-weight: normal;
+    color: black;
+	}
+	textarea {
+		width: 90%;
+	}
+	input[type=submit] {
+    margin: 50px 0 0 0;
+    padding: 0;
+    width: 30%;
+    color: brown;
+    background: #FFFFE0;
+    font-size: 18px;
+    font-family: byrnison, Arial, sans-serif;
+    transition: all 0.5s ease;
+    &:hover {
+      background: brown;
+      color: whitesmoke;
+    }
+	}
+	span {
+    float: right;
+    position: absolute;
+    color: orange;
+    font-weight: bold;
+    right: 1%;
+	}
+	.ng-invalid.ng-dirty {
+		border: 2px solid red;
+		box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+	}
+	.ng-valid.ng-dirty {
+		border: 2px solid green;
+		box-shadow: 0 0 10px rgba(34, 139, 34, 1);
+	}
+}
+
+//---------------------------header------------------
+header {
+	min-height: 10%;
+}
+.menu {
+	text-align: center;
+	background: #F5DEB3;
+	.link {
+		padding: 0;
+		transition: all 0.5s ease;
+		&:hover {
+		background: @color;
+		}
+	}
+	.dropdown-toggle:after {
+		content: "";
+		border-top: 5px dashed;
+  	border-right: 5px solid transparent;
+  	border-left: 5px solid transparent;
+  	position: absolute;
+  	top: 20px;
+  	right: 35%;
+	}
+	.dropdown-menu {
+		left: 10%;
+		text-align: center;
+		li a {
+			font-size: 13px;
+		}
+	}
+	a {
+		padding: 10px 0;
+  	display: block;
+  	font-family: astahov, Helvetica, Arial, sans-serif;
+  	color: @color;
+  	font-size: 18px;
+  	&:hover {
+  		text-decoration: none;
+  		color: #FFDEAD;
+  	}
+  	&:focus {
+  		text-decoration: none;
+  	}
+	}
+} 
+
+.active {
+	border-bottom: 1px solid #800000;
+	text-shadow: 0 0 10px rgba(255, 0, 0, 1);
+}
+
+//----------------------main-------------------------
+main {
+	background: beige;
+	height: 85%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+//--main.html--
+.town-name {
+	font-size: 25px;
+	font-family: morning-glory, Helvetica, sans-serif;
+	color: #DC143C;
+}
+.town-img {
+	width: 100%;
+}
+
+.vin-hor {
+	margin: 30px 0;
+	text-align: center;
+}
+
+//--tavern.html--
+//guest-book.html
+.message-cont {
+	padding-top: 100px;
+}
+
+//-------------------------footer--------------------
+footer {
+	font-family: astahov, Helvetica, Arial, sans-serif;
+	text-align: center;
+	background: #F5DEB3;
+	padding-top: 5px;
+	height: 5%;
+}
