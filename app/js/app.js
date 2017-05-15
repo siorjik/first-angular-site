@@ -13,10 +13,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	}).state("calendar", {
 		url: "/calendar",
 		templateUrl: "/app/templates/calendar.html"
-	}).state("tavern", {
+	})./*state("tavern", {
 		url: "/tavern",
 		templateUrl: "/app/templates/tavern.html"
-	}).state("chat", {
+	}).*/state("chat", {
 		url: "/chat",
 		templateUrl: "/app/templates/chat.html"
 	}).state("guest-book", {
