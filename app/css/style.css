@@ -184,6 +184,24 @@ main {
 .message-cont {
   padding-top: 100px;
 }
+.message-list.ng-enter,
+.message-list.ng-leave {
+  -webkit-transition: 2s linear all;
+  transition: 2s linear all;
+  opacity: 0;
+}
+.message-list.ng-enter.ng-enter-start {
+  opacity: 0;
+}
+.message-list.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.message-list.ng-leave.ng-leave-start {
+  opacity: 1;
+}
+.message-list.ng-leave.ng-leave-active {
+  opacity: 0;
+}
 footer {
   font-family: astahov, Helvetica, Arial, sans-serif;
   text-align: center;
