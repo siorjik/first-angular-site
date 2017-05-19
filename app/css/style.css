@@ -181,6 +181,9 @@ main {
   margin: 30px 0;
   text-align: center;
 }
+.slider {
+  margin-bottom: 100px;
+}
 .message-cont {
   padding-top: 100px;
 }
