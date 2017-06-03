@@ -1,0 +1,23 @@
+<div class="container-fluid">
+	<h2>This is warriors!!!</h2>
+	<div class="row check-town" ng-controller="townUnitsCtrl as townUnitsCtrl">
+		<div class="col-lg-2">
+			<p ng-repeat="check in townUnitsCtrl.checkTown">
+				<label><input type="radio" name={{check.value}} value={{check.value}} ng-model="townUnitsCtrl.checkTown.value">{{check.name}}</label>
+			</p>
+		</div>
+		<div class="col-lg-10">
+			<div ng-switch on="townUnitsCtrl.checkTown.value">
+				<div ng-switch-when="castle">
+					<p>{{townUnitsCtrl.units[0].warUnit}}</p>
+					<img ng-src={{townUnitsCtrl.units[0].src}}>
+				</div>
+				<div ng-switch-when="rampart">
+					<p>{{townUnitsCtrl.units[1].warUnit}}</p>
+					<img ng-src={{townUnitsCtrl.units[1].src}}>
+				</div>
+				<div ng-switch-default>Check town please...</div>
+			</div>
+		</div>
+	</div>
+</div>

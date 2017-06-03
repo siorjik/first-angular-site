@@ -6,13 +6,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: "/",
 		templateUrl: "/app/templates/main.html",
 		controller: "townsListCtrl"
-	}).state("registry", {
-		url: "/registry",
-		templateUrl: "/app/templates/registry.html",
-		controller: "registryCtrl"
-	}).state("calendar", {
-		url: "/calendar",
-		templateUrl: "/app/templates/calendar.html"
+	}).state("heroes", {
+		url: "/heroes",
+		templateUrl: "/app/templates/heroes.html"
+	}).state("warriors", {
+		url: "/warriors",
+		templateUrl: "/app/templates/warriors.html",
+		controller: "townUnitsCtrl"
 	})./*state("tavern", {
 		url: "/tavern",
 		templateUrl: "/app/templates/tavern.html"
@@ -23,5 +23,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: "/guest-book",
 		templateUrl: "/app/templates/guest-book.html",
 		controller: "guestMessagesCtrl"
+	}).state("registry", {
+		url: "/registry",
+		templateUrl: "/app/templates/registry.html",
+		controller: "registryCtrl"
 	});
 });
