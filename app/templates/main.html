@@ -1,10 +1,10 @@
 <div class="container-fluid">
 	<h2>Towns of real heroes:</h2>
-	<div class="slider" bx-slider></div>
+	<div class="slider animated bounceInDown" bx-slider></div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div ng-controller="townsListCtrl as townsListCtrl">
-				<div ng-repeat="towns in townsListCtrl.townsList">
+				<div class="animated fadeInUp" ng-repeat="towns in townsListCtrl.townsList">
 					<div class="row">
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 							<p class="town-name">{{towns.name}}</p>

@@ -18,6 +18,10 @@
 	font-family: byrnison;
 	src: url(../fonts/byrnison.otf);
 }
+@font-face {
+	font-family: land;
+	src: url(../fonts/land.ttf);
+}
 
 @color: #800000;
 
@@ -28,11 +32,14 @@
 
 h1, h2, h3 {
 	padding: 0;
-	margin: 0;
 	font-family: ice, Helvetica, sans-serif;
 	text-align: center;
 	color: fadeout(@color, 40%);
 	margin: 20px auto 50px;
+}
+
+h4 {
+	margin-top: 0;
 }
 
 a {
@@ -208,27 +215,57 @@ main {
 	}
 }
 
+.unit-list {
+	.unit-cont {
+		cursor: pointer;
+	}
+	p {
+		color: fadeout(blue, 40%);
+		font-family: land, Helvetica, sans-serif;
+		line-height: 1;
+		font-size: 30px;
+		text-transform: capitalize;
+	}
+	div span {
+		font-family: Georgia, Helvetica, sans-serif;
+		font-weight: bold;
+		color: #556B2F;
+	}
+	h4 {
+		color: fadeout(green, 40%);
+		border-bottom: 2px solid green;
+	}
+}
+
+.modal-header h3 {
+	color: fadeout(blue, 40%);
+	font-family: land, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 0.5;
+}
+.modal-body {
+	width: 100%;
+	img {
+		width: 40%;
+		margin-top: -100px;
+	}
+	.wrap-unit {
+		display: inline-block;
+		width: 55%;
+		span {
+			font-family: Georgia, Helvetica, sans-serif;
+			color: fadeout(#2F4F4F, 20%);
+		}
+	}
+	h4 {
+		color: fadeout(#9932CC, 40%);
+	}
+}
+
 //--tavern.html--
 //guest-book.html
 .message-cont {
 	padding-top: 100px;
-}
-
-.message-list.ng-enter, .message-list.ng-leave {
-	transition: 2s linear all;
-	opacity: 0;
-}
-.message-list.ng-enter.ng-enter-start {
-	opacity: 0;
-}
-.message-list.ng-enter.ng-enter-active {
-	opacity: 1;
-}
-.message-list.ng-leave.ng-leave-start {
-	opacity: 1;
-}
-.message-list.ng-leave.ng-leave-active {
-	opacity: 0;
 }
 
 //-------------------------footer--------------------
