@@ -13,7 +13,8 @@ app.factory("units", function() {
 					damage: "1-3",
 					speed: "4",
 					price: "60",
-					src: "app/img/units/castle/spearman.gif"
+					src: "app/img/units/castle/spearman.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
 				},
 				{
 					id: 2,
@@ -24,7 +25,8 @@ app.factory("units", function() {
 					damage: "2-3",
 					speed: "4",
 					price: "100",
-					src: "app/img/units/castle/crossbowman.gif"
+					src: "app/img/units/castle/crossbowman.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 3,
@@ -35,7 +37,8 @@ app.factory("units", function() {
 					damage: "3-6",
 					speed: "6",
 					price: "200",
-					src: "app/img/units/castle/griffin.gif"
+					src: "app/img/units/castle/griffin.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 4,
@@ -46,7 +49,8 @@ app.factory("units", function() {
 					damage: "6-9",
 					speed: "5",
 					price: "300",
-					src: "app/img/units/castle/knight.gif"
+					src: "app/img/units/castle/knight.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 5,
@@ -57,7 +61,8 @@ app.factory("units", function() {
 					damage: "10-12",
 					speed: "5",
 					price: "400",
-					src: "app/img/units/castle/monk.gif"
+					src: "app/img/units/castle/monk.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 6,
@@ -68,7 +73,8 @@ app.factory("units", function() {
 					damage: "15-25",
 					speed: "7",
 					price: "1000",
-					src: "app/img/units/castle/cavalryman.gif"
+					src: "app/img/units/castle/cavalryman.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 7,
@@ -79,7 +85,8 @@ app.factory("units", function() {
 					damage: "50",
 					speed: "12",
 					price: "3000 and 1 gem",
-					src: "app/img/units/castle/angel.gif"
+					src: "app/img/units/castle/angel.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				}
 			],
 			warUnitUp: [
@@ -92,7 +99,8 @@ app.factory("units", function() {
 					damage: "2-3",
 					speed: "5",
 					price: "75",
-					src: "app/img/units/castle/halberdier.gif"
+					src: "app/img/units/castle/halberdier.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 2,
@@ -103,7 +111,8 @@ app.factory("units", function() {
 					damage: "2-3",
 					speed: "6",
 					price: "150",
-					src: "app/img/units/castle/shooter.gif"
+					src: "app/img/units/castle/shooter.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 3,
@@ -114,7 +123,8 @@ app.factory("units", function() {
 					damage: "3-6",
 					speed: "9",
 					price: "240",
-					src: "app/img/units/castle/royal_griffin.gif"
+					src: "app/img/units/castle/royal_griffin.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 4,
@@ -125,7 +135,8 @@ app.factory("units", function() {
 					damage: "7-10",
 					speed: "6",
 					price: "400",
-					src: "app/img/units/castle/crusader.gif"
+					src: "app/img/units/castle/crusader.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 5,
@@ -136,7 +147,8 @@ app.factory("units", function() {
 					damage: "10-12",
 					speed: "7",
 					price: "450",
-					src: "app/img/units/castle/fanatic.gif"
+					src: "app/img/units/castle/fanatic.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 6,
@@ -147,7 +159,8 @@ app.factory("units", function() {
 					damage: "20-25",
 					speed: "9",
 					price: "1200",
-					src: "app/img/units/castle/champion.gif"
+					src: "app/img/units/castle/champion.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 7,
@@ -158,7 +171,8 @@ app.factory("units", function() {
 					damage: "50",
 					speed: "18",
 					price: "5000 and 3 gem",
-					src: "app/img/units/castle/archangel.gif"
+					src: "app/img/units/castle/archangel.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				}
 			] 
 		},
@@ -175,7 +189,8 @@ app.factory("units", function() {
 					damage: "2-3",
 					speed: "6",
 					price: "70",
-					src: "app/img/units/rampart/centaur.gif"
+					src: "app/img/units/rampart/centaur.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 2,
@@ -186,7 +201,8 @@ app.factory("units", function() {
 					damage: "2-4",
 					speed: "3",
 					price: "120",
-					src: "app/img/units/rampart/gnome.gif"
+					src: "app/img/units/rampart/gnome.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 3,
@@ -197,7 +213,8 @@ app.factory("units", function() {
 					damage: "3-5",
 					speed: "6",
 					price: "200",
-					src: "app/img/units/rampart/elf.gif"
+					src: "app/img/units/rampart/elf.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 4,
@@ -208,7 +225,8 @@ app.factory("units", function() {
 					damage: "5-9",
 					speed: "8",
 					price: "250",
-					src: "app/img/units/rampart/pegasus.gif"
+					src: "app/img/units/rampart/pegasus.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 5,
@@ -219,7 +237,8 @@ app.factory("units", function() {
 					damage: "10-14",
 					speed: "3",
 					price: "350",
-					src: "app/img/units/rampart/guardian_dendroid.gif"
+					src: "app/img/units/rampart/guardian_dendroid.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 6,
@@ -230,7 +249,8 @@ app.factory("units", function() {
 					damage: "18-22",
 					speed: "7",
 					price: "850",
-					src: "app/img/units/rampart/unicorn.gif"
+					src: "app/img/units/rampart/unicorn.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 7,
@@ -241,7 +261,8 @@ app.factory("units", function() {
 					damage: "40-50",
 					speed: "10",
 					price: "2400 and 1 crystal",
-					src: "app/img/units/rampart/green_dragon.gif"
+					src: "app/img/units/rampart/green_dragon.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				}
 			],
 			warUnitUp: [
@@ -254,7 +275,8 @@ app.factory("units", function() {
 					damage: "2-3",
 					speed: "8",
 					price: "90",
-					src: "app/img/units/rampart/centaur_captain.gif"
+					src: "app/img/units/rampart/centaur_captain.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 2,
@@ -265,7 +287,8 @@ app.factory("units", function() {
 					damage: "2-4",
 					speed: "5",
 					price: "150",
-					src: "app/img/units/rampart/battle_gnome.gif"
+					src: "app/img/units/rampart/battle_gnome.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 3,
@@ -276,7 +299,8 @@ app.factory("units", function() {
 					damage: "3-5",
 					speed: "7",
 					price: "225",
-					src: "app/img/units/rampart/grand_elf.gif"
+					src: "app/img/units/rampart/grand_elf.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 4,
@@ -287,7 +311,8 @@ app.factory("units", function() {
 					damage: "5-9",
 					speed: "12",
 					price: "275",
-					src: "app/img/units/rampart/silver_pegasus.gif"
+					src: "app/img/units/rampart/silver_pegasus.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 5,
@@ -298,7 +323,8 @@ app.factory("units", function() {
 					damage: "10-14",
 					speed: "4",
 					price: "425",
-					src: "app/img/units/rampart/dendroid_soldier.gif"
+					src: "app/img/units/rampart/dendroid_soldier.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 6,
@@ -309,7 +335,8 @@ app.factory("units", function() {
 					damage: "18-22",
 					speed: "9",
 					price: "950",
-					src: "app/img/units/rampart/battle_unicorn.gif"
+					src: "app/img/units/rampart/battle_unicorn.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 7,
@@ -320,7 +347,8 @@ app.factory("units", function() {
 					damage: "40-50",
 					speed: "16",
 					price: "4500 and 2 crystal",
-					src: "app/img/units/rampart/golden_dragon.gif"
+					src: "app/img/units/rampart/golden_dragon.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				}
 			]
 		},
@@ -337,7 +365,8 @@ app.factory("units", function() {
 					damage: "1-2",
 					speed: "4",
 					price: "30",
-					src: "app/img/units/tower/gremlin.gif"
+					src: "app/img/units/tower/gremlin.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 2,
@@ -348,7 +377,8 @@ app.factory("units", function() {
 					damage: "2-3",
 					speed: "6",
 					price: "130",
-					src: "app/img/units/tower/stone_gargoyle.gif"
+					src: "app/img/units/tower/stone_gargoyle.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 3,
@@ -359,7 +389,8 @@ app.factory("units", function() {
 					damage: "4-5",
 					speed: "3",
 					price: "150",
-					src: "app/img/units/tower/stone_golem.gif"
+					src: "app/img/units/tower/stone_golem.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 4,
@@ -370,7 +401,8 @@ app.factory("units", function() {
 					damage: "7-9",
 					speed: "5",
 					price: "350",
-					src: "app/img/units/tower/mage.gif"
+					src: "app/img/units/tower/mage.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 5,
@@ -381,7 +413,8 @@ app.factory("units", function() {
 					damage: "13-16",
 					speed: "7",
 					price: "550",
-					src: "app/img/units/tower/genie.gif"
+					src: "app/img/units/tower/genie.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 6,
@@ -392,7 +425,8 @@ app.factory("units", function() {
 					damage: "20",
 					speed: "5",
 					price: "1100",
-					src: "app/img/units/tower/naga.gif"
+					src: "app/img/units/tower/naga.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 7,
@@ -403,7 +437,8 @@ app.factory("units", function() {
 					damage: "40-60",
 					speed: "7",
 					price: "2000 and 1 gem",
-					src: "app/img/units/tower/giant.gif"
+					src: "app/img/units/tower/giant.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 			],
 			warUnitUp: [
@@ -416,7 +451,8 @@ app.factory("units", function() {
 					damage: "1-2",
 					speed: "5",
 					price: "40",
-					src: "app/img/units/tower/master_gremlin.gif"
+					src: "app/img/units/tower/master_gremlin.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 2,
@@ -427,7 +463,8 @@ app.factory("units", function() {
 					damage: "2-3",
 					speed: "9",
 					price: "160",
-					src: "app/img/units/tower/obsidian_gargoyle.gif"
+					src: "app/img/units/tower/obsidian_gargoyle.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 3,
@@ -438,7 +475,8 @@ app.factory("units", function() {
 					damage: "4-5",
 					speed: "5",
 					price: "200",
-					src: "app/img/units/tower/iron_golem.gif"
+					src: "app/img/units/tower/iron_golem.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 4,
@@ -449,7 +487,8 @@ app.factory("units", function() {
 					damage: "7-9",
 					speed: "7",
 					price: "450",
-					src: "app/img/units/tower/arch_mage.gif"
+					src: "app/img/units/tower/arch_mage.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 5,
@@ -460,7 +499,8 @@ app.factory("units", function() {
 					damage: "13-16",
 					speed: "11",
 					price: "600",
-					src: "app/img/units/tower/master_genie.gif"
+					src: "app/img/units/tower/master_genie.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 6,
@@ -471,7 +511,8 @@ app.factory("units", function() {
 					damage: "30",
 					speed: "7",
 					price: "1600",
-					src: "app/img/units/tower/naga_queen.gif"
+					src: "app/img/units/tower/naga_queen.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				},
 				{
 					id: 7,
@@ -482,7 +523,8 @@ app.factory("units", function() {
 					damage: "40-60",
 					speed: "11",
 					price: "5000 and 2 gem",
-					src: "app/img/units/tower/titan.gif"
+					src: "app/img/units/tower/titan.gif",
+					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 				}
 			]
 		}
