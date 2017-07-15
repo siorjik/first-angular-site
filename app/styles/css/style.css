@@ -1,26 +1,26 @@
 @font-face {
   font-family: astahov;
-  src: url(../fonts/astahov.ttf);
+  src: url(../../fonts/astahov.ttf);
 }
 @font-face {
   font-family: segoe;
-  src: url(../fonts/segoe.ttf);
+  src: url(../../fonts/segoe.ttf);
 }
 @font-face {
   font-family: ice;
-  src: url(../fonts/ice.ttf);
+  src: url(../../fonts/ice.ttf);
 }
 @font-face {
   font-family: morning-glory;
-  src: url(../fonts/morning-glory.otf);
+  src: url(../../fonts/morning-glory.otf);
 }
 @font-face {
   font-family: byrnison;
-  src: url(../fonts/byrnison.otf);
+  src: url(../../fonts/byrnison.otf);
 }
 @font-face {
   font-family: land;
-  src: url(../fonts/land.ttf);
+  src: url(../../fonts/land.ttf);
 }
 * {
   padding: 0;
@@ -45,7 +45,7 @@ html {
   height: 100%;
 }
 body {
-  background: url(../img/pero.jpg);
+  background: url(../../img/pero.jpg);
   font-family: segoe, Helvetica, sans-serif;
   height: 100%;
 }
@@ -201,8 +201,38 @@ main {
   height: 20px;
   width: 20px;
 }
+.comparison h4 {
+  margin: 15px 0;
+  color: grey;
+}
+.comparison h5 {
+  color: rgba(128, 128, 128, 0.7);
+}
+.comparison input {
+  margin-top: 20px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid grey;
+  cursor: pointer;
+  outline: none;
+}
+.comparison select {
+  background: whitesmoke;
+  border: 2px solid bisque;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+.comparison option {
+  color: rgba(128, 128, 0, 0.8);
+}
 .unit-list .unit-cont {
   cursor: pointer;
+}
+.unit-list .unit-cont:hover {
+  -webkit-box-shadow: 0 0 10px #808000;
+  box-shadow: 0 0 10px #808000;
 }
 .unit-list p {
   color: rgba(0, 0, 255, 0.6);
@@ -226,23 +256,18 @@ main {
   font-size: 30px;
   line-height: 0.5;
 }
-.modal-body {
-  width: 100%;
+.modal-body h4 {
+  color: rgba(153, 50, 204, 0.6);
 }
-.modal-body img {
-  width: 40%;
-  margin-top: -100px;
-}
-.modal-body .wrap-unit {
-  display: inline-block;
-  width: 55%;
-}
-.modal-body .wrap-unit span {
+.modal-body span {
   font-family: Georgia, Helvetica, sans-serif;
   color: rgba(47, 79, 79, 0.8);
 }
-.modal-body h4 {
-  color: rgba(153, 50, 204, 0.6);
+.modal-body .min {
+  color: red;
+}
+.modal-body .max {
+  color: green;
 }
 .message-cont {
   padding-top: 100px;
@@ -253,4 +278,10 @@ footer {
   background: #F5DEB3;
   padding-top: 5px;
   height: 5%;
+}
+/*****************************media********************/
+@media all and (max-width: 550px) {
+  .modal-unit-box {
+    display: none;
+  }
 }
