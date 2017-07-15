@@ -1,26 +1,26 @@
 @font-face {
 	font-family: astahov;
-	src: url(../fonts/astahov.ttf);
+	src: url(../../fonts/astahov.ttf);
 }
 @font-face {
 	font-family: segoe;
-	src: url(../fonts/segoe.ttf);
+	src: url(../../fonts/segoe.ttf);
 }
 @font-face {
 	font-family: ice;
-	src: url(../fonts/ice.ttf);
+	src: url(../../fonts/ice.ttf);
 }
 @font-face {
 	font-family: morning-glory;
-	src: url(../fonts/morning-glory.otf);
+	src: url(../../fonts/morning-glory.otf);
 }
 @font-face {
 	font-family: byrnison;
-	src: url(../fonts/byrnison.otf);
+	src: url(../../fonts/byrnison.otf);
 }
 @font-face {
 	font-family: land;
-	src: url(../fonts/land.ttf);
+	src: url(../../fonts/land.ttf);
 }
 
 @color: #800000;
@@ -51,7 +51,7 @@ html {
 }
 
 body {
-	background: url(../img/pero.jpg);
+	background: url(../../img/pero.jpg);
 	font-family: segoe, Helvetica, sans-serif;
 	height: 100%;
 }
@@ -215,9 +215,39 @@ main {
 	}
 }
 
+.comparison {
+	h4 {
+		margin: 15px 0;
+		color: grey;
+	}
+	h5 {
+		color: fadeout(grey, 30%);
+	}
+	input {
+		margin-top: 20px;
+		border-radius: 5px;
+		padding: 2px;
+		border: 2px solid grey;
+		cursor: pointer;
+		outline: none;
+	}
+	select {
+		background: whitesmoke;
+		border: 2px solid bisque;
+		border-radius: 5px;
+		outline: none;
+	}
+	option {
+		color: fadeout(rgb(128,128,0), 20%);
+	}
+}
+
 .unit-list {
 	.unit-cont {
 		cursor: pointer;
+		&:hover{
+			box-shadow: 0 0 10px rgb(128,128,0);
+		}
 	}
 	p {
 		color: fadeout(blue, 40%);
@@ -244,21 +274,18 @@ main {
 	line-height: 0.5;
 }
 .modal-body {
-	width: 100%;
-	img {
-		width: 40%;
-		margin-top: -100px;
-	}
-	.wrap-unit {
-		display: inline-block;
-		width: 55%;
-		span {
-			font-family: Georgia, Helvetica, sans-serif;
-			color: fadeout(#2F4F4F, 20%);
-		}
-	}
 	h4 {
 		color: fadeout(#9932CC, 40%);
+	}
+	span {
+		font-family: Georgia, Helvetica, sans-serif;
+		color: fadeout(#2F4F4F, 20%);
+	}
+	.min {
+		color: red;
+	}
+	.max {
+		color: green;
 	}
 }
 
@@ -268,6 +295,18 @@ main {
 	padding-top: 100px;
 }
 
+//registry.html
+.reg-alert {
+	background: greenyellow;
+	color: black;
+	width: 50%;
+	margin: 20px auto;
+	.user-name {
+		color: red;
+		font-size: 20px;
+	}
+}
+
 //-------------------------footer--------------------
 footer {
 	font-family: astahov, Helvetica, Arial, sans-serif;
@@ -275,4 +314,9 @@ footer {
 	background: #F5DEB3;
 	padding-top: 5px;
 	height: 5%;
+}
+
+/*****************************media********************/
+@media all and (max-width: 550px) {
+	.modal-unit-box {display: none;}
 }
