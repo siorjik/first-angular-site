@@ -122,6 +122,9 @@ body {
 }
 header {
   min-height: 8%;
+  position: fixed;
+  z-index: 2;
+  width: 95%;
 }
 .menu {
   text-align: center;
@@ -142,7 +145,7 @@ header {
   border-left: 5px solid transparent;
   position: absolute;
   top: 20px;
-  right: 35%;
+  margin-left: 20px;
 }
 .menu .dropdown-menu {
   left: 10%;
@@ -169,11 +172,33 @@ header {
   border-bottom: 1px solid #800000;
   text-shadow: 0 0 10px #ff0000;
 }
+.mob-menu {
+  text-align: center;
+  display: none;
+}
+.mob-menu span {
+  padding: 5px 0;
+  background: #F5DEB3;
+  font-family: astahov, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #800000;
+  display: block;
+}
+.mob-menu ul {
+  list-style: none;
+  display: none;
+  opacity: 0.9;
+  background: whitesmoke;
+}
+.mob-menu ul a {
+  color: black;
+}
 main {
   background: beige;
-  height: 87%;
+  min-height: 95%;
   overflow-y: auto;
   overflow-x: hidden;
+  padding: 50px 0 10px 0;
 }
 .town-name {
   font-size: 25px;
@@ -223,6 +248,7 @@ main {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   outline: none;
+  width: 100%;
 }
 .comparison option {
   color: rgba(128, 128, 0, 0.8);
@@ -230,9 +256,10 @@ main {
 .unit-list .unit-cont {
   cursor: pointer;
 }
-.unit-list .unit-cont:hover {
-  -webkit-box-shadow: 0 0 10px #808000;
-  box-shadow: 0 0 10px #808000;
+.unit-list .unit-cont:hover p {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-shadow: 0 0 10px #0000ff;
 }
 .unit-list p {
   color: rgba(0, 0, 255, 0.6);
@@ -287,11 +314,52 @@ footer {
   text-align: center;
   background: #F5DEB3;
   padding-top: 5px;
-  height: 5%;
+  min-height: 5%;
 }
 /*****************************media********************/
+@media all and (max-width: 767px) {
+  .mob-menu {
+    display: block;
+  }
+  .town-img {
+    margin-bottom: 10px;
+  }
+  .vin-hor img {
+    width: 100%;
+  }
+  .label-town {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+  }
+  .comparison select {
+    width: 50%;
+  }
+  .comparison select:nth-of-type(2) {
+    margin-bottom: 25px;
+  }
+  .comparison input {
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+  }
+  .unit-list {
+    text-align: center;
+  }
+}
 @media all and (max-width: 550px) {
   .modal-unit-box {
     display: none;
+  }
+  .label-town {
+    width: 50%;
+  }
+  .form-style input[type=submit] {
+    width: 50%;
+  }
+}
+@media all and (min-width: 1700px) {
+  .unit-list .unit-cont {
+    width: 14%;
   }
 }

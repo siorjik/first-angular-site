@@ -127,6 +127,9 @@ body {
 //---------------------------header------------------
 header {
 	min-height: 8%;
+	position: fixed;
+  z-index: 2;
+  width: 95%;
 }
 .menu {
 	text-align: center;
@@ -145,7 +148,8 @@ header {
   	border-left: 5px solid transparent;
   	position: absolute;
   	top: 20px;
-  	right: 35%;
+  	//right: 35%;
+  	margin-left: 20px;
 	}
 	.dropdown-menu {
 		left: 10%;
@@ -175,12 +179,35 @@ header {
 	text-shadow: 0 0 10px rgba(255, 0, 0, 1);
 }
 
+.mob-menu {
+	text-align: center;
+	display: none;
+  span{
+  	padding: 5px 0;
+  	background: #F5DEB3;
+  	font-family: astahov, Helvetica, Arial, sans-serif;
+  	font-size: 18px;
+  	color: @color;
+  	display: block;
+  }
+	ul {
+		list-style: none;
+		display: none;
+		opacity: 0.9;
+		background: whitesmoke;
+		a {
+			color: black;
+		}
+	}
+}
+
 //----------------------main-------------------------
 main {
 	background: beige;
-	height: 87%;
+	min-height: 95%;
 	overflow-y: auto;
 	overflow-x: hidden;
+	padding: 50px 0 10px 0;
 }
 
 //main.html
@@ -236,6 +263,7 @@ main {
 		border: 2px solid bisque;
 		border-radius: 5px;
 		outline: none;
+		width: 100%;
 	}
 	option {
 		color: fadeout(rgb(128,128,0), 20%);
@@ -246,7 +274,10 @@ main {
 	.unit-cont {
 		cursor: pointer;
 		&:hover{
-			box-shadow: 0 0 10px rgb(128,128,0);
+			p{
+				transition: all 0.5s ease;
+				text-shadow: 0 0 10px rgb(0, 0, 255);
+			}
 		}
 	}
 	p {
@@ -313,10 +344,27 @@ footer {
 	text-align: center;
 	background: #F5DEB3;
 	padding-top: 5px;
-	height: 5%;
+	min-height: 5%;
 }
 
 /*****************************media********************/
+@media all and (max-width: 767px) {
+	.mob-menu {display: block;}
+	.town-img {margin-bottom: 10px;}
+	.vin-hor img{width: 100%;}
+	.label-town {display:inline-block; width: 25%; text-align: center;}
+	.comparison select {width: 50%;}
+	.comparison select:nth-of-type(2) {margin-bottom: 25px;}
+	.comparison input {position: absolute; bottom: 50px; right: 5%;}
+	.unit-list {text-align: center;}
+}
+
 @media all and (max-width: 550px) {
 	.modal-unit-box {display: none;}
+	.label-town {width: 50%;}
+	.form-style input[type=submit] {width: 50%;}
+}
+
+@media all and (min-width: 1700px) {
+	.unit-list .unit-cont {width: 14%;}
 }
