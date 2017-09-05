@@ -1,20 +1,20 @@
-<h2>welcome guest!</h2>
+<h2 translate>guestBook.welcomeGest</h2>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div ng-controller="guestMessagesCtrl as guestMessagesCtrl">
 				<form class="form-style animated rotateIn" name="guestForm" ng-submit="guestMessagesCtrl.messagesAll(text)">
 					<label>
-						Please your name:<br><input type="text" name="guestName" ng-model="text.name" required>
+						<span translate>guestBook.yourName</span><br><input type="text" name="guestName" ng-model="text.name" required>
 					</label>
-					<span ng-show="guestForm.guestName.$error.required && guestForm.guestName.$dirty">Required!</span>
+					<span ng-show="guestForm.guestName.$error.required && guestForm.guestName.$dirty" translate>guestBook.required</span>
 					<br>
 					<label>
-						Leave your message:<br><textarea cols="100" rows="5" name="guestMessage" ng-model="text.mess" required></textarea>
+						<span translate>guestBook.leaveMess</span><br><textarea cols="100" rows="5" name="guestMessage" ng-model="text.mess" required></textarea>
 					</label>
-					<span ng-show="guestForm.guestMessage.$error.required && guestForm.guestMessage.$dirty">Required!</span>
+					<span ng-show="guestForm.guestMessage.$error.required && guestForm.guestMessage.$dirty" translate>guestBook.required</span>
 					<br>
-					<input type="submit" value="Send message">
+					<button translate>guestBook.sendMess</button>
 				</form>
 				<div class="message-cont">
 					<div ng-repeat="message in message">

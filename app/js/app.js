@@ -1,6 +1,6 @@
-var app = angular.module("app", ['ui.router', 'ngSanitize', 'ngAnimate', 'ui.bootstrap']);
+var app = angular.module("app", ['ui.router', 'ngSanitize', 'ngAnimate', 'ui.bootstrap', 'pascalprecht.translate']);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider, $translateProvider) {
 	$urlRouterProvider.otherwise("/");
 	$stateProvider.state("home", {
 		url: "/",
@@ -24,4 +24,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: "/registry",
 		templateUrl: "/app/templates/registry.html"
 	});
+
+	
+	$translateProvider.registerAvailableLanguageKeys(['ru', 'en'], {
+		'en-*': 'en',
+		'ru-*': 'ru'
+	});
+	$translateProvider.useStaticFilesLoader({
+		prefix: "/app/js/locales/",
+		suffix: ".json"
+	});
+	$translateProvider.preferredLanguage('en');
+	$translateProvider.useSanitizeValueStrategy(null);
 });

@@ -28,6 +28,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	outline: none;
 }
 
 h1, h2, h3 {
@@ -67,10 +68,13 @@ body {
 .form-style {
 	width: 100%;
 	text-align: center;
-	label {
-		font-size: 18px;
+	label span {
+		position: static;
+		float: none;
+		display: inherit;
+		font-size: 20px;
 		color: brown;
-		margin-bottom: 20px;
+		margin: 10px 0;
 		font-family: byrnison, Arial, sans-serif;
     font-weight: normal;
 	}
@@ -80,7 +84,7 @@ body {
 	input {
 		height: 35px;
 	}
-	input, textarea {
+	input, textarea, button {
     background: whitesmoke;
     border-radius: 15px;
     border: 2px solid #FFE4B5;
@@ -93,13 +97,15 @@ body {
 	textarea {
 		width: 90%;
 	}
-	input[type=submit] {
+	button {
+		border-radius: 15px;
+    border: 2px solid #FFE4B5;
     margin: 50px 0 0 0;
-    padding: 0;
+    padding: 5px;
     width: 30%;
     color: brown;
     background: #FFFFE0;
-    font-size: 18px;
+    font-size: 20px;
     font-family: byrnison, Arial, sans-serif;
     transition: all 0.5s ease;
     &:hover {
@@ -204,7 +210,7 @@ header {
 //----------------------main-------------------------
 main {
 	background: beige;
-	min-height: 95%;
+	min-height: 93%;
 	overflow-y: auto;
 	overflow-x: hidden;
 	padding: 50px 0 10px 0;
@@ -250,7 +256,7 @@ main {
 	h5 {
 		color: fadeout(grey, 30%);
 	}
-	input {
+	button {
 		margin-top: 20px;
 		border-radius: 5px;
 		padding: 2px;
@@ -340,11 +346,21 @@ main {
 
 //-------------------------footer--------------------
 footer {
-	font-family: astahov, Helvetica, Arial, sans-serif;
 	text-align: center;
 	background: #F5DEB3;
-	padding-top: 5px;
-	min-height: 5%;
+	padding-top: 10px;
+	min-height: 7%;
+  font-size: 18px;
+  color: #800000;
+	span {
+		margin-right: 20px;
+	}
+	select {
+		border-radius: 5px;
+  	border: none;
+  	color: black;
+  	cursor: pointer;
+	}
 }
 
 /*****************************media********************/
@@ -357,6 +373,7 @@ footer {
 	.comparison select:nth-of-type(2) {margin-bottom: 25px;}
 	.comparison input {position: absolute; bottom: 50px; right: 5%;}
 	.unit-list {text-align: center;}
+	.soc-links {margin-bottom: 10px;}
 }
 
 @media all and (max-width: 550px) {

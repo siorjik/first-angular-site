@@ -25,6 +25,7 @@
 * {
   padding: 0;
   margin: 0;
+  outline: none;
 }
 h1,
 h2,
@@ -59,10 +60,13 @@ body {
   width: 100%;
   text-align: center;
 }
-.form-style label {
-  font-size: 18px;
+.form-style label span {
+  position: static;
+  float: none;
+  display: inherit;
+  font-size: 20px;
   color: brown;
-  margin-bottom: 20px;
+  margin: 10px 0;
   font-family: byrnison, Arial, sans-serif;
   font-weight: normal;
 }
@@ -74,7 +78,8 @@ body {
   height: 35px;
 }
 .form-style input,
-.form-style textarea {
+.form-style textarea,
+.form-style button {
   background: whitesmoke;
   -webkit-border-radius: 15px;
   border-radius: 15px;
@@ -88,18 +93,21 @@ body {
 .form-style textarea {
   width: 90%;
 }
-.form-style input[type=submit] {
+.form-style button {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 2px solid #FFE4B5;
   margin: 50px 0 0 0;
-  padding: 0;
+  padding: 5px;
   width: 30%;
   color: brown;
   background: #FFFFE0;
-  font-size: 18px;
+  font-size: 20px;
   font-family: byrnison, Arial, sans-serif;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.form-style input[type=submit]:hover {
+.form-style button:hover {
   background: brown;
   color: whitesmoke;
 }
@@ -195,7 +203,7 @@ header {
 }
 main {
   background: beige;
-  min-height: 95%;
+  min-height: 93%;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 50px 0 10px 0;
@@ -233,7 +241,7 @@ main {
 .comparison h5 {
   color: rgba(128, 128, 128, 0.7);
 }
-.comparison input {
+.comparison button {
   margin-top: 20px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -310,11 +318,22 @@ main {
   font-size: 20px;
 }
 footer {
-  font-family: astahov, Helvetica, Arial, sans-serif;
   text-align: center;
   background: #F5DEB3;
-  padding-top: 5px;
-  min-height: 5%;
+  padding-top: 10px;
+  min-height: 7%;
+  font-size: 18px;
+  color: #800000;
+}
+footer span {
+  margin-right: 20px;
+}
+footer select {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  cursor: pointer;
 }
 /*****************************media********************/
 @media all and (max-width: 767px) {
@@ -345,6 +364,9 @@ footer {
   }
   .unit-list {
     text-align: center;
+  }
+  .soc-links {
+    margin-bottom: 10px;
   }
 }
 @media all and (max-width: 550px) {
