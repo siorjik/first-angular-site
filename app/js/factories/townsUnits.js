@@ -2,11 +2,11 @@ app.factory("units", function() {
 	var units = [
 		{
 			id: 1,
-			town: "castle",
+			town: "main.castle",
 			warUnitStart: [
 				{
 					id: 1,
-					name: "spearman",
+					name: "warriors.castle.spearman",
 					health: "10",
 					attack: "4",
 					protection: "5",
@@ -14,11 +14,11 @@ app.factory("units", function() {
 					speed: "4",
 					price: "60",
 					src: "app/img/units/castle/spearman.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
+					descript: "warriors.castle.spearmanDesc" 
 				},
 				{
 					id: 2,
-					name: "сrossbowman",
+					name: "warriors.castle.сrossbowman",
 					health: "10",
 					attack: "6",
 					protection: "3",
@@ -26,11 +26,11 @@ app.factory("units", function() {
 					speed: "4",
 					price: "100",
 					src: "app/img/units/castle/crossbowman.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.сrossbowmanDesc"
 				},
 				{
 					id: 3,
-					name: "griffin",
+					name: "warriors.castle.griffin",
 					health: "25",
 					attack: "8",
 					protection: "8",
@@ -38,11 +38,11 @@ app.factory("units", function() {
 					speed: "6",
 					price: "200",
 					src: "app/img/units/castle/griffin.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.griffinDesc"
 				},
 				{
 					id: 4,
-					name: "knight",
+					name: "warriors.castle.knight",
 					health: "35",
 					attack: "10",
 					protection: "12",
@@ -50,11 +50,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "300",
 					src: "app/img/units/castle/knight.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.knightDesc"
 				},
 				{
 					id: 5,
-					name: "monk",
+					name: "warriors.castle.monk",
 					health: "30",
 					attack: "12",
 					protection: "7",
@@ -62,11 +62,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "400",
 					src: "app/img/units/castle/monk.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.monkDesc"
 				},
 				{
 					id: 6,
-					name: "сavalryman",
+					name: "warriors.castle.сavalryman",
 					health: "100",
 					attack: "15",
 					protection: "15",
@@ -74,11 +74,11 @@ app.factory("units", function() {
 					speed: "7",
 					price: "1000",
 					src: "app/img/units/castle/cavalryman.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.cavalrymanDesc"
 				},
 				{
 					id: 7,
-					name: "angel",
+					name: "warriors.castle.angel",
 					health: "200",
 					attack: "20",
 					protection: "20",
@@ -86,13 +86,13 @@ app.factory("units", function() {
 					speed: "12",
 					price: "3000 and 1 gem",
 					src: "app/img/units/castle/angel.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.angelDesc"
 				}
 			],
 			warUnitUp: [
 				{
 					id: 1,
-					name: "halberdier",
+					name: "warriors.castle.halberdier",
 					health: "10",
 					attack: "6",
 					protection: "5",
@@ -100,11 +100,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "75",
 					src: "app/img/units/castle/halberdier.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.halberdierDesc"
 				},
 				{
 					id: 2,
-					name: "shooter",
+					name: "warriors.castle.shooter",
 					health: "10",
 					attack: "6",
 					protection: "3",
@@ -112,11 +112,11 @@ app.factory("units", function() {
 					speed: "6",
 					price: "150",
 					src: "app/img/units/castle/shooter.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.shooterDesc"
 				},
 				{
 					id: 3,
-					name: "royal griffin",
+					name: "warriors.castle.royalGriffin",
 					health: "25",
 					attack: "9",
 					protection: "9",
@@ -124,11 +124,11 @@ app.factory("units", function() {
 					speed: "9",
 					price: "240",
 					src: "app/img/units/castle/royal_griffin.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.royalGriffinDesc"
 				},
 				{
 					id: 4,
-					name: "crusader",
+					name: "warriors.castle.crusader",
 					health: "35",
 					attack: "12",
 					protection: "12",
@@ -136,11 +136,11 @@ app.factory("units", function() {
 					speed: "6",
 					price: "400",
 					src: "app/img/units/castle/crusader.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.crusaderDesc"
 				},
 				{
 					id: 5,
-					name: "fanatic",
+					name: "warriors.castle.fanatic",
 					health: "30",
 					attack: "12",
 					protection: "10",
@@ -148,11 +148,11 @@ app.factory("units", function() {
 					speed: "7",
 					price: "450",
 					src: "app/img/units/castle/fanatic.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.fanaticDesc"
 				},
 				{
 					id: 6,
-					name: "сhampion",
+					name: "warriors.castle.сhampion",
 					health: "100",
 					attack: "16",
 					protection: "16",
@@ -160,11 +160,11 @@ app.factory("units", function() {
 					speed: "9",
 					price: "1200",
 					src: "app/img/units/castle/champion.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.championDesc"
 				},
 				{
 					id: 7,
-					name: "archangel",
+					name: "warriors.castle.archangel",
 					health: "250",
 					attack: "30",
 					protection: "30",
@@ -172,17 +172,17 @@ app.factory("units", function() {
 					speed: "18",
 					price: "5000 and 3 gem",
 					src: "app/img/units/castle/archangel.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.castle.archangelDesc"
 				}
 			] 
 		},
 		{
 			id: 2,
-			town: "rampart",
+			town: "main.rampart",
 			warUnitStart: [
 				{
 					id: 1,
-					name: "сentaur",
+					name: "warriors.rampart.сentaur",
 					health: "8",
 					attack: "5",
 					protection: "3",
@@ -190,11 +190,11 @@ app.factory("units", function() {
 					speed: "6",
 					price: "70",
 					src: "app/img/units/rampart/centaur.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.centaurDesc"
 				},
 				{
 					id: 2,
-					name: "gnome",
+					name: "warriors.rampart.gnome",
 					health: "20",
 					attack: "6",
 					protection: "7",
@@ -202,11 +202,11 @@ app.factory("units", function() {
 					speed: "3",
 					price: "120",
 					src: "app/img/units/rampart/gnome.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.gnomeDesc"
 				},
 				{
 					id: 3,
-					name: "elf",
+					name: "warriors.rampart.elf",
 					health: "15",
 					attack: "9",
 					protection: "5",
@@ -214,11 +214,11 @@ app.factory("units", function() {
 					speed: "6",
 					price: "200",
 					src: "app/img/units/rampart/elf.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.elfDesc"
 				},
 				{
 					id: 4,
-					name: "pegasus",
+					name: "warriors.rampart.pegasus",
 					health: "30",
 					attack: "9",
 					protection: "8",
@@ -226,11 +226,11 @@ app.factory("units", function() {
 					speed: "8",
 					price: "250",
 					src: "app/img/units/rampart/pegasus.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.pegasusDesc"
 				},
 				{
 					id: 5,
-					name: "guard. dendroid",
+					name: "warriors.rampart.guardDendroid",
 					health: "55",
 					attack: "9",
 					protection: "12",
@@ -238,11 +238,11 @@ app.factory("units", function() {
 					speed: "3",
 					price: "350",
 					src: "app/img/units/rampart/guardian_dendroid.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.guardDendroidDesc"
 				},
 				{
 					id: 6,
-					name: "unicorn",
+					name: "warriors.rampart.unicorn",
 					health: "90",
 					attack: "15",
 					protection: "14",
@@ -250,11 +250,11 @@ app.factory("units", function() {
 					speed: "7",
 					price: "850",
 					src: "app/img/units/rampart/unicorn.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.unicornDesc"
 				},
 				{
 					id: 7,
-					name: "green dragon",
+					name: "warriors.rampart.greenDragon",
 					health: "180",
 					attack: "18",
 					protection: "18",
@@ -262,13 +262,13 @@ app.factory("units", function() {
 					speed: "10",
 					price: "2400 and 1 crystal",
 					src: "app/img/units/rampart/green_dragon.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.greenDragonDesc"
 				}
 			],
 			warUnitUp: [
 				{
 					id: 1,
-					name: "сaptain centaur",
+					name: "warriors.rampart.сaptainCentaur",
 					health: "10",
 					attack: "6",
 					protection: "3",
@@ -276,11 +276,11 @@ app.factory("units", function() {
 					speed: "8",
 					price: "90",
 					src: "app/img/units/rampart/centaur_captain.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.captainCentaurDesc"
 				},
 				{
 					id: 2,
-					name: "battle gnome",
+					name: "warriors.rampart.battleGnome",
 					health: "20",
 					attack: "7",
 					protection: "7",
@@ -288,11 +288,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "150",
 					src: "app/img/units/rampart/battle_gnome.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.battleGnomeDesc"
 				},
 				{
 					id: 3,
-					name: "grand elf",
+					name: "warriors.rampart.grandElf",
 					health: "15",
 					attack: "9",
 					protection: "5",
@@ -300,11 +300,11 @@ app.factory("units", function() {
 					speed: "7",
 					price: "225",
 					src: "app/img/units/rampart/grand_elf.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.grandElfDesc"
 				},
 				{
 					id: 4,
-					name: "silver pegasus",
+					name: "warriors.rampart.silverPegasus",
 					health: "30",
 					attack: "9",
 					protection: "10",
@@ -312,11 +312,11 @@ app.factory("units", function() {
 					speed: "12",
 					price: "275",
 					src: "app/img/units/rampart/silver_pegasus.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.silverPegasusDesc"
 				},
 				{
 					id: 5,
-					name: "dendroid soldier",
+					name: "warriors.rampart.dendroidSoldier",
 					health: "65",
 					attack: "9",
 					protection: "12",
@@ -324,11 +324,11 @@ app.factory("units", function() {
 					speed: "4",
 					price: "425",
 					src: "app/img/units/rampart/dendroid_soldier.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.dendroidSoldierDesc"
 				},
 				{
 					id: 6,
-					name: "battle unicorn",
+					name: "warriors.rampart.battleUnicorn",
 					health: "110",
 					attack: "15",
 					protection: "14",
@@ -336,11 +336,11 @@ app.factory("units", function() {
 					speed: "9",
 					price: "950",
 					src: "app/img/units/rampart/battle_unicorn.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.battleUnicornDesc"
 				},
 				{
 					id: 7,
-					name: "golden dragon",
+					name: "warriors.rampart.goldenDragon",
 					health: "250",
 					attack: "27",
 					protection: "27",
@@ -348,17 +348,17 @@ app.factory("units", function() {
 					speed: "16",
 					price: "4500 and 2 crystal",
 					src: "app/img/units/rampart/golden_dragon.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.rampart.goldenDragonDesc"
 				}
 			]
 		},
 		{
 			id: 3,
-			town: "tower",
+			town: "main.tower",
 			warUnitStart: [
 				{
 					id: 1,
-					name: "gremlin",
+					name: "warriors.tower.gremlin",
 					health: "4",
 					attack: "3",
 					protection: "3",
@@ -366,11 +366,11 @@ app.factory("units", function() {
 					speed: "4",
 					price: "30",
 					src: "app/img/units/tower/gremlin.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.gremlinDescript"
 				},
 				{
 					id: 2,
-					name: "stone gargoyle",
+					name: "warriors.tower.stoneGargoyle",
 					health: "16",
 					attack: "6",
 					protection: "6",
@@ -378,11 +378,11 @@ app.factory("units", function() {
 					speed: "6",
 					price: "130",
 					src: "app/img/units/tower/stone_gargoyle.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.stoneGargoyleDescript"
 				},
 				{
 					id: 3,
-					name: "stone golem",
+					name: "warriors.tower.stoneGolem",
 					health: "30",
 					attack: "7",
 					protection: "10",
@@ -390,11 +390,11 @@ app.factory("units", function() {
 					speed: "3",
 					price: "150",
 					src: "app/img/units/tower/stone_golem.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.stoneGolemDescript"
 				},
 				{
 					id: 4,
-					name: "mage",
+					name: "warriors.tower.mage",
 					health: "25",
 					attack: "11",
 					protection: "8",
@@ -402,11 +402,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "350",
 					src: "app/img/units/tower/mage.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.mageDescript"
 				},
 				{
 					id: 5,
-					name: "genie",
+					name: "warriors.tower.genie",
 					health: "40",
 					attack: "12",
 					protection: "12",
@@ -414,11 +414,11 @@ app.factory("units", function() {
 					speed: "7",
 					price: "550",
 					src: "app/img/units/tower/genie.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.genieDescript"
 				},
 				{
 					id: 6,
-					name: "naga",
+					name: "warriors.tower.naga",
 					health: "110",
 					attack: "16",
 					protection: "13",
@@ -426,11 +426,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "1100",
 					src: "app/img/units/tower/naga.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.nagaDescript"
 				},
 				{
 					id: 7,
-					name: "giant",
+					name: "warriors.tower.giant",
 					health: "150",
 					attack: "19",
 					protection: "16",
@@ -438,13 +438,13 @@ app.factory("units", function() {
 					speed: "7",
 					price: "2000 and 1 gem",
 					src: "app/img/units/tower/giant.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.giantDescript"
 				},
 			],
 			warUnitUp: [
 				{
 					id: 1,
-					name: "master gremlin",
+					name: "warriors.tower.masterGremlin",
 					health: "4",
 					attack: "4",
 					protection: "4",
@@ -452,11 +452,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "40",
 					src: "app/img/units/tower/master_gremlin.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.masterGremlinDescript"
 				},
 				{
 					id: 2,
-					name: "obsid. gargoyle",
+					name: "warriors.tower.obsidGargoyle",
 					health: "16",
 					attack: "7",
 					protection: "7",
@@ -464,11 +464,11 @@ app.factory("units", function() {
 					speed: "9",
 					price: "160",
 					src: "app/img/units/tower/obsidian_gargoyle.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.obsidGargoyleDescript"
 				},
 				{
 					id: 3,
-					name: "iron golem",
+					name: "warriors.tower.ironGolem",
 					health: "35",
 					attack: "9",
 					protection: "10",
@@ -476,11 +476,11 @@ app.factory("units", function() {
 					speed: "5",
 					price: "200",
 					src: "app/img/units/tower/iron_golem.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.ironGolemDescript"
 				},
 				{
 					id: 4,
-					name: "archmage",
+					name: "warriors.tower.archmage",
 					health: "30",
 					attack: "12",
 					protection: "9",
@@ -488,11 +488,11 @@ app.factory("units", function() {
 					speed: "7",
 					price: "450",
 					src: "app/img/units/tower/arch_mage.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.archmageDescript"
 				},
 				{
 					id: 5,
-					name: "master genie",
+					name: "warriors.tower.masterGenie",
 					health: "40",
 					attack: "12",
 					protection: "12",
@@ -500,11 +500,11 @@ app.factory("units", function() {
 					speed: "11",
 					price: "600",
 					src: "app/img/units/tower/master_genie.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.masterGenieDescript"
 				},
 				{
 					id: 6,
-					name: "naga queen",
+					name: "warriors.tower.nagaQueen",
 					health: "110",
 					attack: "16",
 					protection: "13",
@@ -512,11 +512,11 @@ app.factory("units", function() {
 					speed: "7",
 					price: "1600",
 					src: "app/img/units/tower/naga_queen.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.nagaQueenDescript"
 				},
 				{
 					id: 7,
-					name: "titan",
+					name: "warriors.tower.titan",
 					health: "300",
 					attack: "24",
 					protection: "24",
@@ -524,7 +524,7 @@ app.factory("units", function() {
 					speed: "11",
 					price: "5000 and 2 gem",
 					src: "app/img/units/tower/titan.gif",
-					descript: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					descript: "warriors.tower.titanDescript"
 				}
 			]
 		}

@@ -1,27 +1,27 @@
 <div class="modal-header">
   <button class="close" ng-click="ok()">&times</button>
-  <h3 class="modal-title" id="modal-title">{{unitObj.name}}</h3>
+  <h3 class="modal-title" id="modal-title" translate>{{unitObj.name}}</h3>
 </div>
 <div class="modal-body" id="modal-body">
   <div class="container-fluid">
-    <h4>level {{unitObj.id}}</h4>
+    <h4>{{'warriors.lvl' | translate}} {{unitObj.id}}</h4>
     <div class="row">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <span>health:</span> {{unitObj.health}}<br>
-        <span>attack:</span> {{unitObj.attack}}<br>
-        <span>protection:</span> {{unitObj.protection}}<br>
-        <span>damage:</span> {{unitObj.damage}}<br>
-        <span>speed:</span> {{unitObj.speed}}<br>
-        <span>price:</span> {{unitObj.price}}
+        <span translate>warriors.health</span> {{unitObj.health}}<br>
+        <span translate>warriors.attack</span> {{unitObj.attack}}<br>
+        <span translate>warriors.protection</span> {{unitObj.protection}}<br>
+        <span translate>warriors.damage</span> {{unitObj.damage}}<br>
+        <span translate>warriors.speed</span> {{unitObj.speed}}<br>
+        <span translate>warriors.price</span> {{unitObj.price}}
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
         <img ng-src={{unitObj.src}}>
       </div>
     </div>
     <br>
-    <h4>description:</h4>
+    <h4 translate>warriors.descript</h4>
     <div class="row">
-      <div class="col-lg-12">{{unitObj.descript}}</div>
+      <div class="col-lg-12" translate>{{unitObj.descript}}</div>
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	<h2>Towns of real heroes:</h2>
+	<h2 translate>main.townsReal</h2>
 	<div class="slider animated bounceInDown" bx-slider></div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -7,11 +7,11 @@
 				<div class="animated fadeInUp" ng-repeat="towns in townsListCtrl.townsList">
 					<div class="row">
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-							<p class="town-name">{{towns.name}}</p>
+							<p class="town-name" translate>{{towns.name}}</p>
 							<img class="town-img" ng-src={{towns.img}}>
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-							<span ng-bind-html="towns.descript"></span>
+							<span ng-bind-html="towns.descript | translate"></span>
 						</div>
 					</div>
 					<div class="vin-hor">

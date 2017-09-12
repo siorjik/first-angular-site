@@ -2,12 +2,12 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <h3 class="modal-title">{{unit_1.name}}</h3><br>
-        <p style="color: yellowgreen; text-align: center;">({{unit_1.town}})</p>
+        <h3 class="modal-title" translate>{{unit_1.name}}</h3><br>
+        <p style="color: yellowgreen; text-align: center;" translate>({{unit_1.town}})</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <h3 class="modal-title">{{unit_2.name}}</h3><br>
-        <p style="color: yellowgreen; text-align: center;">({{unit_2.town}})</p>
+        <h3 class="modal-title" translate>{{unit_2.name}}</h3><br>
+        <p style="color: yellowgreen; text-align: center;" translate>({{unit_2.town}})</p>
       </div>
     </div>
   </div>  
@@ -16,24 +16,24 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 modal-unit-box" style="text-align: center;">
-        <h4>level {{unit_1.id}}</h4>
+        <h4>{{'warriors.lvl' | translate}} {{unit_1.id}}</h4>
         <img ng-src={{unit_1.src}}>
-        <h4>description:</h4>
-        <p style="text-align: left;">{{unit_1.descript}}</p>
+        <h4 translate>warriors.descript</h4>
+        <p style="text-align: left;" translate>{{unit_1.descript}}</p>
       </div>
       <div ng-class="{'col-xs-4': xs, 'col-xs-12': !xs}" class="col-sm-4 col-md-4 col-lg-4" style="text-align: center;">
-        <strong ng-class="{'min': +unit_1.health < +unit_2.health, 'max': +unit_1.health > +unit_2.health}">{{unit_1.health}}</strong> - <span>health</span> - <strong ng-class="{'min': +unit_1.health > +unit_2.health, 'max': +unit_1.health < +unit_2.health}">{{unit_2.health}}</strong><br>
-        <strong ng-class="{'min': +unit_1.attack < +unit_2.attack, 'max': +unit_1.attack > +unit_2.attack}">{{unit_1.attack}}</strong> - <span>attack</span> - <strong ng-class="{'min': +unit_1.attack > +unit_2.attack, 'max': +unit_1.attack < +unit_2.attack}">{{unit_2.attack}}</strong><br>
-        <strong ng-class="{'min': +unit_1.protection < +unit_2.protection, 'max': +unit_1.protection > +unit_2.protection}">{{unit_1.protection}}</strong> - <span>protection</span> - <strong ng-class="{'min': +unit_1.protection > +unit_2.protection, 'max': +unit_1.protection < +unit_2.protection}">{{unit_2.protection}}</strong><br>
-        <strong ng-class="{'min': unit_1.sumDamage < unit_2.sumDamage, 'max': unit_1.sumDamage > unit_2.sumDamage}">{{unit_1.damage}}</strong> - <span>damage</span> - <strong ng-class="{'min': unit_1.sumDamage > unit_2.sumDamage, 'max': unit_1.sumDamage < unit_2.sumDamage}">{{unit_2.damage}}</strong><br>
-        <strong ng-class="{'min': +unit_1.speed < +unit_2.speed, 'max': +unit_1.speed > +unit_2.speed}">{{unit_1.speed}}</strong> - <span>speed</span> - <strong ng-class="{'min': +unit_1.speed > +unit_2.speed, 'max': +unit_1.speed < +unit_2.speed}">{{unit_2.speed}}</strong><br>
-        <strong ng-class="{'min': +unit_1.priceResult > +unit_2.priceResult, 'max': +unit_1.priceResult < +unit_2.priceResult}">{{unit_1.price}}</strong> - <span>price</span> - <strong ng-class="{'min': +unit_1.priceResult < +unit_2.priceResult, 'max': +unit_1.priceResult > +unit_2.priceResult}">{{unit_2.price}}</strong>
+        <strong ng-class="{'min': +unit_1.health < +unit_2.health, 'max': +unit_1.health > +unit_2.health}">{{unit_1.health}}</strong> - <span translate>warriors.health</span> - <strong ng-class="{'min': +unit_1.health > +unit_2.health, 'max': +unit_1.health < +unit_2.health}">{{unit_2.health}}</strong><br>
+        <strong ng-class="{'min': +unit_1.attack < +unit_2.attack, 'max': +unit_1.attack > +unit_2.attack}">{{unit_1.attack}}</strong> - <span translate>warriors.attack</span> - <strong ng-class="{'min': +unit_1.attack > +unit_2.attack, 'max': +unit_1.attack < +unit_2.attack}">{{unit_2.attack}}</strong><br>
+        <strong ng-class="{'min': +unit_1.protection < +unit_2.protection, 'max': +unit_1.protection > +unit_2.protection}">{{unit_1.protection}}</strong> - <span translate>warriors.protection</span> - <strong ng-class="{'min': +unit_1.protection > +unit_2.protection, 'max': +unit_1.protection < +unit_2.protection}">{{unit_2.protection}}</strong><br>
+        <strong ng-class="{'min': unit_1.sumDamage < unit_2.sumDamage, 'max': unit_1.sumDamage > unit_2.sumDamage}">{{unit_1.damage}}</strong> - <span translate>warriors.damage</span> - <strong ng-class="{'min': unit_1.sumDamage > unit_2.sumDamage, 'max': unit_1.sumDamage < unit_2.sumDamage}">{{unit_2.damage}}</strong><br>
+        <strong ng-class="{'min': +unit_1.speed < +unit_2.speed, 'max': +unit_1.speed > +unit_2.speed}">{{unit_1.speed}}</strong> - <span translate>warriors.speed</span> - <strong ng-class="{'min': +unit_1.speed > +unit_2.speed, 'max': +unit_1.speed < +unit_2.speed}">{{unit_2.speed}}</strong><br>
+        <strong ng-class="{'min': +unit_1.priceResult > +unit_2.priceResult, 'max': +unit_1.priceResult < +unit_2.priceResult}">{{unit_1.price}}</strong> - <span translate>warriors.price</span> - <strong ng-class="{'min': +unit_1.priceResult < +unit_2.priceResult, 'max': +unit_1.priceResult > +unit_2.priceResult}">{{unit_2.price}}</strong>
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 modal-unit-box" style="text-align: center;">
-        <h4>level {{unit_2.id}}</h4>
+        <h4>{{'warriors.lvl' | translate}} {{unit_2.id}}</h4>
         <img ng-src={{unit_2.src}}>
-        <h4>description:</h4>
-        <p style="text-align: left;">{{unit_2.descript}}</p>
+        <h4 translate>warriors.descript</h4>
+        <p style="text-align: left;" translate>{{unit_2.descript}}</p>
       </div>
     </div>
   </div>
