@@ -1,4 +1,4 @@
-var app = angular.module("app", ['ui.router', 'ngSanitize', 'ngAnimate', 'ui.bootstrap', 'pascalprecht.translate']);
+var app = angular.module("app", ['ui.router', 'ngSanitize', 'ngAnimate', 'ui.bootstrap', 'pascalprecht.translate', 'duScroll']);
 
 app.config(function($stateProvider, $urlRouterProvider, $translateProvider) {
 	$urlRouterProvider.otherwise("/");
